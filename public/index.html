@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>pDox</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="favicon.png">
+
+
+		<link rel="manifest" href="manifest.json">
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="pDox">
+	<meta name="apple-mobile-web-app-title" content="pDox">
+	<meta name="msapplication-starturl" content="/index.html">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="icon" type="image/png" sizes="512x512" href="icon.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="./icons/icon.png">
+	</head>
+	<script>
+	// 	if ('serviceWorker' in navigator) {
+	// window.addEventListener('load', function() {
+	// 	navigator.serviceWorker.register('/service-worker.js');
+	// });
+	// }
+	</script>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<div class="content">
+						<h1>pDox</h1>
+						<h2>Mess Management System</h2>
+						<a href="#" class="button big alt"><span>Let's Go</span></a>
+					</div>
+					<a href="#" class="button hidden"><span>Let's Go</span></a>
+				</div>
+			</header>
+
+		<!-- Main -->
+		<div id="preview">
+			<div class="inner">
+				<div class="content">
+					<header>
+						<h2>pDox</h2>
+					</header>
+					<p>Login</p>
+					<form >
+						<input type="text" id="emailForLogin" label="Email" name="email" placeholder="Email" required /><br />
+						<input type="password" id="passwordForLogin" label="Password" name="password" placeholder="Password"/><br />
+						<select name="usertype" id="usertype" required>
+							<option value="">-- User Type --</option>
+							<option value="1">Student</option>
+							<option value="2">Admin</option>
+						</select><br />
+						<input type="button" name="dopost" value="Login" id="loginButton" />
+					<!-- <input type="button" name="dopost" value="Login" onclick="if ($('#usertype option:selected').text() === 'Admin'){location.href='admin.html'}else{location.href='menu.html'}" /> -->
+					</form>
+				</div>
+			</div>
+		</div>
+			
+	<!-- Footer -->
+	<footer id="footer">
+		<a href="#" class="info fa fa-info-circle"><span>About</span></a>
+		<div class="inner">
+			<div class="content">
+				<h3>About pDox</h3>
+				<p>pDox deals with the technological aspect in solving the problem of food wastage in college mess at individual level. The proposed concept can be implemented by universities and colleges in their mess to provoke students to save food and therefore save money.</p>
+			</div>
+			<div class="copyright">
+				<h3>Follow Developer</h3>
+				<ul class="icons">
+					<li><a href="" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+					<li><a href="" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+					<li><a href="" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+					<li><a href="" class="icon fa-linkedin" target="_blank"><span class="label">Dribbble</span></a></li>
+				</ul>
+				<span>Hand Crafted with <span>&hearts;</span> in India by <a href="" target="_blank">Gautam</a></span>
+			</div>
+		</div>
+	</footer>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- The core Firebase JS SDK is always required and must be listed first -->
+			<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+			<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+			    <!-- firestore refrence -->
+				<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+				<!-- firestore authentication refernce -->
+			  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+			  <script src="./firebase/init.js" ></script>
+			  <script src="./firebase/login.js" ></script>
+
+
+
+	</body>
+</html>
